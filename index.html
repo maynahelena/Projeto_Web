@@ -1,26 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styleIndex.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styleIndex.css" />
+    <link href="./script/scriptIndex.js" />
     <title>Tela Principal</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <div class="header-left">
-            <img src="./images/IFSP.jpg" class="imagemHead">
-        </div>
-        <div class="header-right">
-          <a class="active" href="#home">Home</a>
-          <a href="#fovaritos">Favoritos</a>
-          <a href="./login.html">Login</a>
-          <a href="./contato.html">Fale Conosco</a>
-        </div>
+      <div class="header-left">
+        <img src="./images/IFSP.jpg" class="imagemHead" />
+      </div>
+      <div class="header-right">
+        <a class="active" href="#home">Home</a>
+        <a href="#fovaritos">Favoritos</a>
+        <a href="./login.html">Login</a>
+        <a href="./contato.html">Fale Conosco</a>
+      </div>
     </div>
-<footer>
-    © Página Criada por Giovani Reis e Mayna Azevedo
-</footer>
-</body>
+    <div class="gallery">
+      <img
+        src="./images/bordignon.jpg"
+        alt="Foto 1"
+        class="gallery-img"
+        onclick="showInfo('info1')"
+      />
+      <img
+        src="./images/joice.jpg"
+        alt="Foto 2"
+        class="gallery-img"
+        onclick="showInfo('info2')"
+      />
+      <img
+        src="./images/Bianca.jpg"
+        alt="Foto 3"
+        class="gallery-img"
+        onclick="showInfo('info3')"
+      />
+    </div>
+
+    <div id="info1" class="info">
+      <h2>Andre Luís Bordignon</h2>
+      <p>
+        Mestre em Engenharia da Computação e graduado em Matemática Aplicada e
+        Computacional pela Unicamp. Possui especialização em Tecnologia Social e
+        Economia Solidária na América Latina. Atualmente é professor do
+        Instituto Federal de São Paulo campus Campinas. Atua nas disciplinas da
+        área de computação. Diretor de tecnologia da organização não
+        governamental Minha Campinas que atua na promoção da participação dos
+        cidadãos e cidadãs nas decisões de caráter público da cidade através de
+        mobilizações sociais utilizando tecnologia social. Entusiasta e usuário
+        de software livre. Membro do grupo de pesquisa NEAES - Núcleo de Estudos
+        em Agroecologia, Educação e Sociedade do IFSP Campinas.
+      </p>
+      <a href="#" onclick="hideInfo('info1')">Fechar</a>
+    </div>
+
+    <div id="info2" class="info">
+      <h2>Joice Barbosa Mendes</h2>
+      <p>
+        Mestra em Ciências em Ciência e Tecnologia da Computação pela
+        Universidade Federal de Itajubá - UNIFEI (2012) com ênfase em
+        Inteligência Artificial e Sistemas Tutores Inteligentes, com a
+        utilização de Raciocínio Baseado em Casos (RBC). Graduada em Ciência da
+        Computação pela Universidade Federal de Itajubá - UNIFEI (2009).
+        Professora efetiva no Instituto Federal de Educação, Ciência e
+        Tecnologia de São Paulo - IFSP, câmpus Campinas, atuando na área de
+        Informática - Programação e Banco de Dados.
+      </p>
+      <a href="#" onclick="hideInfo('info2')">Fechar</a>
+    </div>
+
+    <div id="info3" class="info">
+      <h2>Bianca Maria Pedrosa</h2>
+      <p>
+        Possui graduação em Tecnólogo Em Processamento de Dados pela
+        Universidade Metodista de Piracicaba (1987), mestrado em Ciência da
+        Computação pela Universidade Federal de São Carlos (1994) e doutorado em
+        Computação Aplicada pelo Instituto Nacional de Pesquisas Espaciais
+        (2003). Atualmente é professor ebtt do Instituto Federal de São Paulo.
+        Tem experiência na área de Ciência da Computação, com ênfase em Sistemas
+        de Computação, atuando principalmente nos seguintes temas:
+        geoprocessamento, sistemas de informações geográficas, banco de dados
+        nosql, nosql e banco de dados.
+      </p>
+      <a href="#" onclick="hideInfo('info3')">Fechar</a>
+    </div>
+    <footer class="fixar-rodape">
+      © Página Criada por Giovani Reis e Mayna Azevedo
+    </footer>
+    <script src="./script/scriptIndex.js"></script>
+  </body>
 </html>
