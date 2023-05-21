@@ -4,25 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styleContato.css" />
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <script type="text/javascript" src="./script/env.js"></script>
+    <link rel="stylesheet" href="./styles/styleLogin.css">
     <title>Pagina de Contato</title>
   </head>
   <body>
-    <h1 class="text">Fale Conosco</h1>
-    <form id="contact-form">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required />
-      <label for="age">Idade:</label>
-      <input type="number" id="age" name="age" required />
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required />
-      <label for="phone">Telefone:</label>
-      <input type="tel" id="phone" name="phone" required />
-      <label for="message">Mensagem:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit" class="btn">Enviar</button>
-    </form>
-    <div id="message-container"></div>
     <script src="./script/scriptContato.js"></script>
+    <form name="contato" class="login">
+      <h2>Contato</h2>
+      
+      <div class="box-user">
+          <input type="text" name="nomeContato" required>
+          <label> Usuário</label>
+      </div>
+
+      <div class="box-user">
+        <input type="text" name="emailContato" required>
+        <label> E-mail</label>
+      </div>
+
+      <textarea class="box-user" name="story"rows="5" cols="43">
+          
+      </textarea>
+
+      <a href="#" class="btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Enviar
+      </a>
+    </form>
   </body>
 </html>

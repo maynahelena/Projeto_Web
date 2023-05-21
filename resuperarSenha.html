@@ -8,37 +8,25 @@
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
     <script type="text/javascript" src="./script/env.js"></script>
-    <script type="text/javascript" src="./script/autenticar.js"></script>
+    <script type="text/javascript" src="./script/recuperarSenha.js"></script>
     <link rel="stylesheet" href="./styles/styleLogin.css">
-    <title>Tela de Login</title>
+    <title>Recuperar Senha</title>
 </head>
 <body>
-    <form name="login" class="login">
-        <h2>Login</h2>
+    <form name="recuperarSenha" class="login">
+        <h2>Resgatar Senha</h2>
         
         <div class="box-user">
-            <input type="text" name="email" required>
+            <input type="text" name="emailRecuperacao" required>
             <label> E-mail</label>
         </div>
 
-        <div class="box-user">
-            <input type="password" name="senha" required>
-            <label> Senha</label>
-        </div>
-
-        <div>
-            <a href="recuperarSenha.html" class="forget"> Esqueci a senha </a><br>
-        </div>
-        <div>
-            <a href="cadastro.html" class="forget"> Não tem conta? Se cadastre </a>
-        </div>
-
-        <a href="#" class="btn" onclick="Autenticar()">
+        <a href="#" class="btn" onclick="recuperarSenha()">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            ENTRAR
+            Enviar E-mail
         </a>
 
     </form>
